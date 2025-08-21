@@ -1,7 +1,10 @@
-/* body {
-    background-color: red;
-} */
-* {
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/054/060/830/non_2x/red-and-orange-cartoon-fire-flames-forming-a-frame-border-rising-from-the-bottom-corner-against-a-white-background-ideal-for-danger-warning-and-attention-grabbing-designs-vector.jpg");
+    background-repeat: no-repeat;
+    background-position: -100px 262px;
+    background-attachment:fixed;
+    max-height:min-content;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -10,7 +13,8 @@ nav {
   display: flex; /* 1 */
   justify-content: space-between; /* 2 */
   padding: 1rem 2rem; /* 3 */
-  background: #0b3c7a; /* 4 */
+  background: #8108d1;
+  border: 2px solid black; /* 4 */
 }
 nav ul {
   display: flex; /* 5 */
@@ -20,11 +24,17 @@ nav li {
   padding-left: 1rem; /* 7! */
 }
 nav a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #fff;
 }
-nav h2 {
+nav h2, p {
   color: #fff;
+}
+nav li:hover {
+  background-color: darkgreen;
+}
+nav li {
+  position: sticky;
 }
 /* footer */
 a {
@@ -32,8 +42,8 @@ a {
 }
 header,
 footer {
-  border-top: 2px solid #3498db;
-  background-color: #0b3c7a;
+  border: 2px solid black;
+  background-color: #8108d1;
   color: white;
   text-align: center;
   padding: 1.25rem;
@@ -41,6 +51,7 @@ footer {
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
 }
 #ttechLink {
@@ -52,12 +63,13 @@ footer {
   }
 }
 .cards {
-display: flex;
+display: inline-block;
 justify-content: flex-start;
 align-items: flex-start;
 gap: 1rem;
 flex-wrap: wrap;
 padding: 1rem;
+z-index: 1;
 }
 
 .card {
@@ -65,6 +77,7 @@ width: 250px;
 height: 350px;
 perspective: 800px;
 border-style: none;
+background-color: lightgreen;
 }
 
 .card-inner {
@@ -86,7 +99,6 @@ height: 100%;
 backface-visibility: hidden;
 text-align: center;
 }
-
 .card-front {
 background-color: #e9e9e9;
 color: #333;
@@ -95,11 +107,48 @@ align-items: center;
 justify-content: center;
 }
 
-.card-back {
-background-color: #333;
-color: #fff;
-transform: rotateY(180deg);
+.card-front1 {
+background-color: black;
+color: orange;
 display: flex;
 align-items: center;
 justify-content: center;
 }
+.card-front2 {
+background-color: black;
+color: burlywood;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.card-front3 {
+background-color: black;
+color: #fb3232;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.card-back {
+background-color: none;
+color: #fff;
+transform: rotateY(180deg);
+display: inline;
+align-items: center;
+justify-content: center;
+}
+.card-back h2 {
+  text-align: center;
+  z-index: 1;
+}
+.card-front h2 {
+  text-align: center;
+}
+.card-desc {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:xx-large;
+}
+
+
+  

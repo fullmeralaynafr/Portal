@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CatPhotoApp</title>
+    <style>
+      body {background-color: darkorange;
+      }
+    </style>
+    <style>
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: large;
+        color: midnightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Cats and Such!</h1>
+      <section>
+        <h2>Cat Photos</h2>
+        <p>
+          Everyone loves
+          <a
+            href="https://images.prismic.io/trustedhousesitters/27a1796f-a490-491e-b580-33ae41313909_why+are+cats+so+cute.jpg"
+            >cute cats!</a
+          >
+        </p>
+        <p>And if you don't then you are wrong! <strong>:)</strong></p>
+        <p>
+          See more
+          <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>
+          in our gallery.
+        </p>
+        <a href="https://freecatphotoapp.com"
+          ><img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+            alt="A cute orange cat lying on its back."
+        /></a>
+      </section>
+      <section>
+        <h2>Cat Things</h2>
+        <h3>What do cats love:</h3>
+        <ul>
+          <li>catnip</li>
+          <li>laser pointers</li>
+          <li>chaos</li>
+        </ul>
+        <figure>
+          <img
+            src="https://www.thesun.co.uk/wp-content/uploads/2017/05/nintchdbpict000322461846.jpg"
+            alt="cat hanging on blinds."
+          />
+          <figcaption>Cats <em>love</em> mischief.</figcaption>
+        </figure>
+        <h3>Top 3 things cats <strong>hate</strong></h3>
+        <ol>
+          <li>people</li>
+          <li>dogs</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+            alt="Five cats looking around a field."
+          />
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label
+              ><input
+                id="indoor"
+                type="radio"
+                name="indoor-outdoor"
+                value="indoor"
+                checked
+              />
+              Indoor</label
+            >
+            <label
+              ><input
+                id="outdoor"
+                type="radio"
+                name="indoor-outdoor"
+                value="outdoor"
+              />
+              Outdoor</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input
+              id="loving"
+              type="checkbox"
+              name="personality"
+              value="loving"
+              checked
+            />
+            <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy" />
+            <label for="lazy">Lazy</label>
+            <input
+              id="energetic"
+              type="checkbox"
+              name="personality"
+              value="energetic"
+            />
+            <label for="energetic">Energetic</label>
+            <input
+              id="insane"
+              type="checkbox"
+              name="personality"
+              value="insane"
+            />
+            <label for="insane">Insane</label>
+            <input
+              id="the cutest"
+              type="checkbox"
+              name="personality"
+              value="the cutest"
+              required
+            />
+            <label for="the cutest">The Cutest</label>
+          </fieldset>
+          <input
+            type="text"
+            name="catphotourl"
+            placeholder="cat photo URL"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        No Copyright -
+        <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+        <p>See other websites made by Alayna Fullmer: | <a href="/Portal/index.html">The Main Page!</a> | <a href="/Portal/project_2/index.html">Camper Cafe</a> | <a href="/Portal/project_3/index.html">Marioclub</a> |</p>
+      </p>
+    </footer>
+  </body>
+</html>
